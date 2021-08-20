@@ -1,0 +1,118 @@
+@font-face {
+    font-family: myFirstFont;
+    src:url(Bellota-Bold.ttf);
+}
+
+body{
+    background-image: linear-gradient(rgb(247, 162, 244),rgb(128, 50, 126) ); /* For browsers that do not support image */
+    background-image: url(img/wallpp.jpg);
+    background-size: cover;
+}
+
+.title {
+    font-family: myFirstFont;
+    font-weight: bold;
+    color: rgb(102, 87, 87);
+    text-align: center;
+    margin-left: 20px;
+    cursor: pointer; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;  
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -40%;
+    left: 50%;
+    margin-left: 550px;
+    opacity: 0;
+    transition: opacity 0.3s;  
+  }
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#container{
+    margin: 10px;
+}
+
+.note {
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    background-image: linear-gradient(rgb(199, 211, 212),rgb(184, 223, 226) );
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+}
+
+p.titlestyle {
+    margin-bottom: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    size: 16px;
+}
+
+p.notetextsytle {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    size: 12px;
+    BACKGROUND-COLOR:rgb(171, 199, 202);
+    BORDER-RADIUS: 4px;  
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+}
+
+p.catstyle {
+    font-family: Arial, Helvetica, sans-serif;
+    FONT-SIZE: smaller;
+    FONT-WEIGHT: 600;
+    COLOR: crimson;
+    margin-bottom: 0px;
+}
+
+p.datestyle {
+    font-size: smaller;
+    font-family: monospace;
+    margin-bottom: 0px;
+}
+
+.btnDelete{
+    float:right;
+}
+
+textarea #title{
+    margin: 0 0 9px;
+}
+
