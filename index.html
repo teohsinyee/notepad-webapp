@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Add new notes📝</title>
+</head>
+<body>
+      
+
+<div class="container">
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <h2>New note</h2>
+
+            <form action="insert_note.php" method="post">
+
+            <label for="cat">Category</label>
+            <select name="cat" id="cat">
+                <option value="0">Personal</option>
+                <option value="1">Life</option>
+                <option value="2">Work</option>
+                <option value="3">Travel</option>
+                <option value="4">Other</option>
+            </select>
+
+            <input type="text" class="field" id="title" name="title" placeholder="Title">
+         
+            <textarea placeholder="Note" class="field"  name="text" id="text" ></textarea>
+
+            <button type="submit" class="btn">Done</button>
+
+        </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+    </html>
