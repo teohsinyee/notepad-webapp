@@ -8,3 +8,5 @@ will be stored in either text file or MySql.
 This assignment evaluates a student ability in web platform development.
 
 Completed Nov 2020.
+
+Course grade: A
